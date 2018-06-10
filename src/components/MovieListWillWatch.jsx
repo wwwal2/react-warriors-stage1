@@ -5,7 +5,7 @@ class MovieListWillWatch extends Component {
     const { moviesWillWatch } = this.props;
     return (
       <div style={{ position: "fixed" }}>
-        <h4>Will Watches: {moviesWillWatch.length} movies</h4>
+        <h4>Will Watch: {moviesWillWatch.length} movies</h4>
         <ul className="list-group">
           {moviesWillWatch.map(item => (
             <li key={item.id} className="list-group-item">
