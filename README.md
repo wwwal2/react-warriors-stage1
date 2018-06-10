@@ -1,7 +1,4 @@
-<div style="display: flex; align-items: center">
-  <img src="public/logo.jpg" width="20" />
-  <h3 style="margin-left: 15px">Задание. Этап 1</h3>
-</div>
+<h3 style="margin-left: 15px">Задание. Этап 1</h3>
 
 1.  В главном компоненте <App/> создайте компонент <MovieList>, в котором будет отображаться карточки всех фильмов, данные фильмов взять из файла moviesData.js и записать в state компонента <App/> и потом передать в <MovieList>
 2.  В компоненте <MovieList> мапируйте полученный массив фильмов и
