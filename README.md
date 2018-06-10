@@ -1,4 +1,7 @@
-<img src="public/logo.jpg" width="200" />
+<div>
+  <img src="public/logo.jpg" width="20" style="margin-right: 15px" />
+  <p>Задание. Этап 1</p>
+</div>
 
 1.  В главном компоненте <App/> создайте компонент <MovieList>, в котором будет отображаться карточки всех фильмов, данные фильмов взять из файла moviesData.js и записать в state компонента <App/> и потом передать в <MovieList>
 2.  В компоненте <MovieList> мапируйте полученный массив фильмов и
@@ -17,7 +20,7 @@
 
 На выходе должно получиться как в примере https://reactwarriors.github.io/reactwarriors-stage-1/
 
-## Путь к изображениям для компонента <MovieItem />
+## Путь к изображениям для компонента MovieItem
 
 ```
 https://image.tmdb.org/t/p/w500${path}
