@@ -8,7 +8,7 @@ class MovieItem extends Component {
       this.setState({
         btnActive: !this.state.btnActive
        });
-       /// HOW TOM PASS NAMES TO APP STATE???
+       this.props.onWillWatch(this.props.movieItem.title)
       }
     render() {
     const { vote_average, backdrop_path, title } = this.props.movieItem;
