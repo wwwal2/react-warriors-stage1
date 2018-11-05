@@ -9,11 +9,13 @@ class MovieList extends Component {
     }
     onWillWatch = (title) => {
         // FILTER IS NOT WORKING YET!!!
-        if (this.state.listWatch.filter(item => item === title)) {
-            this.setState({
-                listWatch: [...this.state.listWatch, title]
-              })
-        }
+        if (this.state.listWatch.indexOf(title) === -1) {
+                this.setState({listWatch: [...this.state.listWatch, title]})
+            } else {
+                // this.setState({listWatch: filter})
+            }
+            
+
         console.log(this.state.listWatch)
     }
     render() {
@@ -30,7 +32,7 @@ class MovieList extends Component {
                     </div> 
                 </div>
                 <div className="col col-lg-2">
-                    <MovieListWillWatch list={this.state.listWatch}/>
+                    <MovieListWillWatch list={this.state.listWatch} />
                 </div>
             </div>
         </div>       
