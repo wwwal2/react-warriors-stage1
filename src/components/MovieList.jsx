@@ -8,11 +8,10 @@ class MovieList extends Component {
         listWatch: []
     }
     onWillWatch = (title) => {
-        // FILTER IS NOT WORKING YET!!!
         if (this.state.listWatch.indexOf(title) === -1) {
                 this.setState({listWatch: [...this.state.listWatch, title]})
             } else {
-                // this.setState({listWatch: filter})
+                this.setState({listWatch: this.state.listWatch.filter(item => item !== title)})
             }
             
 
