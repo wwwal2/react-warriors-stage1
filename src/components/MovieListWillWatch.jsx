@@ -8,7 +8,7 @@ function MovieListWillWatch(props) {
         <div>
             <br />
             <ul className="list-group">
-                <li className="list-group-item active">WILL WATCH</li>
+                <li className="list-group-item active">WILL WATCH {props.list.length}</li>
                 {renderList}
             </ul>
         </div>
